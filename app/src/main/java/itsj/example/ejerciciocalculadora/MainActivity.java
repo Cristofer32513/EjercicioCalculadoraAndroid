@@ -234,6 +234,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             resultado=1/primerNumero;
             cajaEntrada.setText(resultado+"");
         }
+        else if(click==R.id.btn_potencia){
+            primerNumero=Double.parseDouble(cajaEntrada.getText().toString());
+            resultado=Math.pow(primerNumero, 2);
+            cajaEntrada.setText(resultado+"");
+        }
     }
 
 

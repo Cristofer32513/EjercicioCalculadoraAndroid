@@ -205,6 +205,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             cajaHistorial.setText(resultado+"+");
             operacionARealizar=1;
         }
+        else if(click==R.id.btn_punto) {
+            if(cajaEntrada.getText().toString().length()==0)
+                cajaEntrada.setText("0.");
+            else{
+                if(!cajaEntrada.getText().toString().contains("."))
+                    cajaEntrada.setText(cajaEntrada.getText().toString()+".");
+            }
+        }
     }
 
 

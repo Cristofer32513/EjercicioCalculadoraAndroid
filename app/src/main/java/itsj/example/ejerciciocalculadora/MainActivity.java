@@ -277,6 +277,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             ms=ms+Double.parseDouble(cajaEntrada.getText().toString());
         else if(click==R.id.btn_m_menos)
             ms=ms-Double.parseDouble(cajaEntrada.getText().toString());
+        else if(click==R.id.btn_mc)
+            ms=0;
     }
 
 

@@ -101,6 +101,46 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        
+        int click=v.getId();
+        String cadena="";
+        cadena=cadena+cajaEntrada.getText().toString();
+
+        if(click==R.id.btn_1)
+            insertarDigitos(cadena, "1");
+        else if(click==R.id.btn_2)
+            insertarDigitos(cadena, "2");
+        else if(click==R.id.btn_3)
+            insertarDigitos(cadena, "3");
+        else if(click==R.id.btn_4)
+            insertarDigitos(cadena, "4");
+        else if(click==R.id.btn_5)
+            insertarDigitos(cadena, "5");
+        else if(click==R.id.btn_6)
+            insertarDigitos(cadena, "6");
+        else if(click==R.id.btn_7)
+            insertarDigitos(cadena, "7");
+        else if(click==R.id.btn_8)
+            insertarDigitos(cadena, "8");
+        else if(click==R.id.btn_9)
+            insertarDigitos(cadena, "9");
+        else if(click==R.id.btn_0) {
+            if(cajaEntrada.getText().toString().equals("0"))
+                cajaEntrada.setText("0");
+            else
+                cajaEntrada.setText(cadena+"0");
+        }
+    }
+
+
+
+    public void insertarDigitos(String cadena, String digitoAInsertar){
+        if(cajaEntrada.getText().toString().equals("0"))
+            cajaEntrada.setText(digitoAInsertar);
+        else if(cajaEntrada.getText().toString().equals("+") || cajaEntrada.getText().toString().equals("-") || cajaEntrada.getText().toString().equals("x") || cajaEntrada.getText().toString().equals("\u00F7")) {
+            cadena="";
+            cajaEntrada.setText(cadena+digitoAInsertar);
+        }
+        else
+            cajaEntrada.setText(cadena+digitoAInsertar);
     }
 }

@@ -149,6 +149,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             else
                 cajaEntrada.setText("0");
         }
+        else if(click == R.id.btn_dividir){
+            if(cajaHistorial.getText().toString().length()==0)
+                primerNumero=1;
+            else
+                primerNumero=Double.parseDouble(cajaHistorial.getText().toString());
+
+            if(cajaEntrada.getText().toString().length()==0)
+                segundoNumero=1;
+            else
+                segundoNumero=Double.parseDouble(cajaEntrada.getText().toString());
+
+            resultado=segundoNumero;
+            cajaEntrada.setText("0");
+            cajaHistorial.setText("");
+            operacionARealizar=4;
+        }
     }
 
 

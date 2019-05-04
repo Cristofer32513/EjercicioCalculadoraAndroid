@@ -256,6 +256,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             cajaHistorial.setText("");
             operacionARealizar=5;
         }
+        else if(click==R.id.btn_raiz){
+            primerNumero=Double.parseDouble(cajaEntrada.getText().toString());
+            resultado=Math.sqrt(primerNumero);
+            cajaEntrada.setText(resultado+"");
+        }
     }
 
 

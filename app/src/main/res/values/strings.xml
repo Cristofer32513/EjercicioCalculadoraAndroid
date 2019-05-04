@@ -1,3 +1,42 @@
 <resources>
-    <string name="app_name">EjercicioCalculadora</string>
+    <string name="app_name">Calculadora</string>
+
+    <string name="txt_btn_estandar">ESTÁNDAR</string>
+    <string name="txt_btn_mc">MC</string>
+    <string name="txt_btn_mr">MR</string>
+    <string name="txt_btn_m_mas">M+</string>
+    <string name="txt_btn_m_menos">M-</string>
+    <string name="txt_btn_ms">MS</string>
+    <string name="txt_btn_m_historial">M▼</string>
+    <string name="txt_btn_porcentaje">%</string>
+    <string name="txt_btn_raiz">\u221A</string>
+    <string name="txt_btn_potencia">x\u00B2</string>
+    <string name="txt_btn_uno_entre_x">1/X</string>
+    <string name="txt_btn_ce">CE</string>
+    <string name="txt_btn_c">C</string>
+    <string name="txt_btn_borrar">DEL</string>
+    <string name="txt_btn_dividir">\u00F7</string>
+    <string name="txt_btn_7">7</string>
+    <string name="txt_btn_8">8</string>
+    <string name="txt_btn_9">9</string>
+    <string name="txt_btn_multiplicar">X</string>
+    <string name="txt_btn_4">4</string>
+    <string name="txt_btn_5">5</string>
+    <string name="txt_btn_6">6</string>
+    <string name="txt_btn_restar">-</string>
+    <string name="txt_btn_1">1</string>
+    <string name="txt_btn_2">2</string>
+    <string name="txt_btn_3">3</string>
+    <string name="txt_btn_sumar">+</string>
+    <string name="txt_btn_mas_menos">\u00B1</string>
+    <string name="txt_btn_0">0</string>
+    <string name="txt_btn_punto">.</string>
+    <string name="txt_btn_igual">=</string>
+
+    <string name="txt_caja_historial"></string>
+    <string name="txt_caja_entrada">0</string>
+
+
+
+
 </resources>

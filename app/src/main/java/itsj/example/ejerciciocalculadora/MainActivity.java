@@ -266,6 +266,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             resultado=primerNumero*(-1);
             cajaEntrada.setText(resultado+"");
         }
+        else if(click==R.id.btn_m_historial){}
     }
 
 

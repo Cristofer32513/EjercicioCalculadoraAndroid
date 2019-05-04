@@ -129,6 +129,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             else
                 cajaEntrada.setText(cadena+"0");
         }
+        else if(click==R.id.btn_ce) {
+            cajaEntrada.setText("0");
+            cajaHistorial.setText("");
+            ms=0;
+            resultado=0.0;
+            operacionARealizar = 0;
+        }
+        else if(click==R.id.btn_c) {
+            cajaEntrada.setText("0");
+            cajaHistorial.setText("");
+            ms=0;
+            resultado=0.0;
+            operacionARealizar = 0;
+        }
+        else if(click == R.id.btn_delete){
+            if(cajaEntrada.getText().toString().length()>1)
+                cajaEntrada.setText(cajaEntrada.getText().toString().substring(0, cajaEntrada.getText().toString().length()-1));
+            else
+                cajaEntrada.setText("0");
+        }
     }
 
 

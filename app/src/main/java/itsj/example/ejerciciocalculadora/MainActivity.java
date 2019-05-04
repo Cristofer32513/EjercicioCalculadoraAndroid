@@ -1,5 +1,6 @@
 package itsj.example.ejerciciocalculadora;
 
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -98,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-
+    @SuppressLint("SetTextI18n")
     @Override
     public void onClick(View v) {
         int click=v.getId();
@@ -283,6 +284,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
+    @SuppressLint("SetTextI18n")
     public void insertarDigitos(String cadena, String digitoAInsertar){
         if(cajaEntrada.getText().toString().equals("0"))
             cajaEntrada.setText(digitoAInsertar);

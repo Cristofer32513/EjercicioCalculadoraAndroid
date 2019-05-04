@@ -273,6 +273,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         else if(click==R.id.btn_mr)
             cajaEntrada.setText(ms+"");
+        else if(click==R.id.btn_m_mas)
+            ms=ms+Double.parseDouble(cajaEntrada.getText().toString());
     }
 
 

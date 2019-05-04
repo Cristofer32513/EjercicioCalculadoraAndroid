@@ -239,6 +239,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             resultado=Math.pow(primerNumero, 2);
             cajaEntrada.setText(resultado+"");
         }
+        else if(click==R.id.btn_porcentaje){
+            if(cajaHistorial.getText().toString().length()==0)
+                primerNumero=1;
+            else
+                primerNumero=Double.parseDouble(cajaHistorial.getText().toString());
+
+            if(cajaEntrada.getText().toString().length()==0)
+                segundoNumero=1;
+            else
+                segundoNumero=Double.parseDouble(cajaEntrada.getText().toString());
+
+            resultado=1;
+            resultado=resultado*segundoNumero;
+            cajaEntrada.setText("0");
+            cajaHistorial.setText("");
+            operacionARealizar=5;
+        }
     }
 
 

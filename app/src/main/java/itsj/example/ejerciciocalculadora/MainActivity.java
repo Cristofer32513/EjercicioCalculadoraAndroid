@@ -213,6 +213,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     cajaEntrada.setText(cajaEntrada.getText().toString()+".");
             }
         }
+        else if(click==R.id.btn_igual) {
+            segundoNumero=Double.parseDouble(cajaEntrada.getText().toString());
+            if(operacionARealizar==1)
+                resultado=resultado+segundoNumero;
+            else if(operacionARealizar == 2)
+                resultado=resultado-segundoNumero;
+            else if(operacionARealizar == 3)
+                resultado=resultado*segundoNumero;
+            else if(operacionARealizar == 4)
+                resultado=resultado/segundoNumero;
+            else if(operacionARealizar == 5)
+                resultado=resultado*(segundoNumero/100);
+
+            cajaEntrada.setText(String.valueOf(resultado));
+            cajaHistorial.setText("");
+        }
     }
 
 

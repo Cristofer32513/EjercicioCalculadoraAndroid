@@ -261,6 +261,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             resultado=Math.sqrt(primerNumero);
             cajaEntrada.setText(resultado+"");
         }
+        else if(click==R.id.btn_mas_menos){
+            primerNumero=Double.parseDouble(cajaEntrada.getText().toString());
+            resultado=primerNumero*(-1);
+            cajaEntrada.setText(resultado+"");
+        }
     }
 
 

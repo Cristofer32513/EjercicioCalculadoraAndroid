@@ -165,6 +165,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             cajaHistorial.setText("");
             operacionARealizar=4;
         }
+        else if(click==R.id.btn_multiplicar){
+            if(cajaHistorial.getText().toString().length()==0)
+                primerNumero=1;
+            else
+                primerNumero=Double.parseDouble(cajaHistorial.getText().toString());
+
+            if(cajaEntrada.getText().toString().length()==0)
+                segundoNumero=1;
+            else
+                segundoNumero=Double.parseDouble(cajaEntrada.getText().toString());
+
+            resultado=segundoNumero;
+            cajaEntrada.setText("x");
+            cajaHistorial.setText("");
+            operacionARealizar=3;
+        }
     }
 
 
